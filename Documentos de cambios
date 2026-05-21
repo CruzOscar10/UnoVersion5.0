@@ -1,0 +1,139 @@
+La versión UNO5_0 representa una evolución importante del sistema respecto a UNO4_0, ya que se realiza una migración completa de consola a interfaz gráfica (GUI con Swing), además de mejoras en arquitectura, experiencia de usuario y modularidad del sistema.
+
+🔄 1. Cambio de interfaz (CONSOLE → GUI)
+🟥 UNO4_0
+Interfaz basada en consola (System.out, Scanner)
+Entrada del jugador por texto
+Visualización de cartas en forma textual
+Flujo secuencial
+🟩 UNO5_0
+Interfaz gráfica completa con Java Swing
+Clase principal de UI: UnoGUI
+Ventana principal: MenuPrincipal
+Representación visual de cartas con imágenes
+Interacción por clic (mouse events)
+📌 Nuevos componentes GUI:
+UnoGUI (tablero completo)
+BackgroundPanel (fondo personalizado)
+CardButton (cartas clicables)
+Paneles de bots visuales
+🧠 2. Arquitectura del sistema
+🟥 UNO4_0
+Arquitectura simple tipo consola
+Lógica y presentación mezcladas en Game
+Flujo lineal dentro de while(true)
+🟩 UNO5_0
+Separación más clara entre:
+🎮 Lógica del juego (Game, RuleEngine, TurnManager)
+🎨 Interfaz (UnoGUI, MenuPrincipal, CardButton)
+📦 Modelo (Card, Deck, Hand, Player)
+🖼️ Utilidades (ImageManager)
+
+✔ Mejora en mantenibilidad
+✔ Mejor organización por responsabilidades
+
+🃏 3. Manejo de cartas
+🟥 UNO4_0
+Cartas mostradas como texto
+Sin representación gráfica
+🟩 UNO5_0
+Cartas representadas con imágenes (/img/*.png)
+Nueva clase:
+CardButton (botón interactivo)
+ImageManager (gestión de rutas de imágenes)
+
+✔ Cartas ahora visuales
+✔ Interacción directa con el mouse
+
+🎮 4. Flujo del juego
+🟥 UNO4_0
+Turnos manejados en while(true) dentro de Game
+IA y jugador humano en consola
+Entrada manual con Scanner
+🟩 UNO5_0
+Turnos gestionados por:
+TurnManager
+Game.siguienteTurnoGUI()
+IA con ejecución automática usando Timer
+Flujo asincrónico (event-driven)
+
+✔ Juego no bloqueante
+✔ Turnos automáticos de IA
+
+🤖 5. Inteligencia artificial
+🟥 UNO4_0
+IA básica:
+Juega primera carta válida
+Si no, roba carta
+🟩 UNO5_0
+IA similar pero integrada a GUI
+Ejecución con delay (simulación humana)
+Logs visuales en pantalla (eventos)
+
+✔ IA más natural visualmente
+
+🎨 6. Experiencia de usuario (UX)
+🟥 UNO4_0
+Texto plano en consola
+Sin animaciones
+Sin feedback visual
+🟩 UNO5_0
+Interfaz moderna con:
+Fondo personalizado (BackgroundPanel)
+Animaciones hover en cartas
+Indicador de color de mesa
+Panel de eventos en tiempo real
+Botón "Robar carta"
+Visualización de bots
+
+✔ Experiencia completamente interactiva
+
+🧩 7. Nuevas clases en UNO5_0
+🆕 Añadidas:
+UnoGUI
+MenuPrincipal
+CardButton
+BackgroundPanel
+ImageManager
+⚙️ 8. Cambios en Game (núcleo)
+🟥 UNO4_0
+Juego ejecutado en consola
+Scanner interno
+Turnos bloqueantes
+🟩 UNO5_0
+Eliminación de Scanner
+Integración con GUI
+Método nuevo:
+iniciarGUI(String nombre)
+Control visual de flujo
+🔁 9. Turnos
+🟥 UNO4_0
+Turnos en loop sincronizado
+🟩 UNO5_0
+Turnos controlados por GUI + Timer
+IA ejecutada automáticamente
+Eventos visuales
+🧾 10. Reglas del juego
+🟩 Ambos sistemas
+RuleEngine se mantiene como núcleo lógico
+🟩 UNO5_0 mejoras:
+Integración con GUI
+Mejor comunicación con interfaz (agregarEvento, actualizarColorActual)
+📊 Conclusión
+
+La versión UNO5_0 representa una actualización mayor del sistema:
+
+✔ De consola → GUI completa
+✔ De texto → gráficos con imágenes
+✔ De flujo lineal → sistema event-driven
+✔ Mejor separación de capas
+✔ Experiencia de usuario significativamente mejorada
+
+🚀 Resultado final
+
+UNO ahora es:
+
+👉 Más visual
+👉 Más interactivo
+👉 Más modular
+👉 Más profesional
