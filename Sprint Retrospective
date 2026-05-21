@@ -1,0 +1,154 @@
+📌 Sprint Retrospective (Experiencia del semestre completo)
+
+Este documento describe cómo fue el desarrollo del proyecto Juego UNO a lo largo del semestre, no solo desde el lado técnico, sino también desde el trabajo en equipo, la comunicación, los problemas que surgieron y cómo fuimos mejorando con el tiempo.
+
+✅ ¿Qué ha salido bien durante el semestre?
+🤝 1. Mejor trabajo en equipo conforme avanzó el proyecto
+
+Al inicio nos costó organizarnos, pero con el tiempo:
+
+Empezamos a dividir mejor las tareas.
+Se mejoró la comunicación entre integración y pruebas.
+Se logró coordinar mejor cuándo se hacían cambios al código.
+Se revisaban los avances antes de integrarlos.
+
+Conforme avanzó el semestre, el proyecto dejó de ser “individual por partes” y se volvió más colaborativo.
+
+📈 2. Evolución constante del proyecto
+
+El proyecto no se quedó estático, fue creciendo poco a poco:
+
+Empezamos con una versión básica en consola.
+Luego se agregaron reglas reales del UNO.
+Se incorporaron cartas especiales (reversa, salto, roba 2, etc.).
+Después se agregó IA para jugar contra el usuario.
+Finalmente se logró una interfaz gráfica funcional.
+
+Cada versión representó una mejora clara respecto a la anterior.
+
+🧱 3. Mejor organización del código
+
+Conforme entendimos mejor el proyecto:
+
+Separamos el código en clases más pequeñas.
+Cada quien entendió mejor qué hacía cada parte:
+Cartas
+Jugadores
+Reglas
+Turnos
+Juego principal
+
+Esto ayudó a que el código fuera más fácil de entender y menos confuso.
+
+🧪 4. Implementación de pruebas
+
+Se empezaron a hacer pruebas más formales:
+
+Probamos cartas, mazo, jugadores y reglas.
+Detectamos errores antes de que afectaran todo el juego.
+Se corrigieron fallos que no se veían en ejecución normal.
+
+Esto ayudó a mejorar la calidad del proyecto.
+
+📚 5. Mejor documentación con el tiempo
+
+Al principio la documentación era básica, pero mejoró:
+
+Se empezaron a incluir explicaciones más claras.
+Se agregaron diagramas UML.
+Se documentó mejor el funcionamiento del sistema.
+Se organizó mejor la entrega final.
+🎨 6. Mejora en la experiencia del usuario
+
+Uno de los cambios más grandes fue la parte visual:
+
+Pasamos de texto en consola a una interfaz gráfica.
+Ahora el juego se ve más real.
+Las cartas ya no son solo texto, ahora son imágenes.
+Se agregaron efectos visuales simples y eventos en pantalla.
+⚠️ ¿Qué se pudo mejorar?
+🧠 1. Mejor comunicación desde el inicio
+
+Al principio hubo momentos donde:
+
+Se hacían cambios sin avisar a tiempo.
+A veces se trabajaba en versiones diferentes del código.
+Hubo pequeños conflictos al integrar cambios.
+
+Mejora:
+Tener acuerdos más claros desde el inicio y usar control de versiones más ordenado.
+
+🎮 2. Inteligencia artificial básica
+
+La IA funciona, pero es muy simple:
+
+Juega la primera carta válida.
+Si no puede, roba.
+
+Mejora:
+
+Hacer que la IA piense mejor sus jugadas.
+Que priorice cartas especiales.
+Que tenga estrategia más real.
+🧪 3. Pruebas más completas
+
+Aunque se hicieron pruebas, faltaron:
+
+Pruebas de todo el sistema completo.
+Simulación de partidas largas.
+Pruebas automáticas más avanzadas.
+🔐 4. Manejo de errores
+
+A veces el programa puede fallar si:
+
+El usuario escribe algo incorrecto.
+No se valida completamente la entrada.
+
+Mejora:
+
+Hacer el sistema más resistente a errores del usuario.
+🔄 5. Detalles del juego
+
+Faltaron algunas reglas completas como:
+
+Reciclar el mazo cuando se termina.
+Mejor control de algunas cartas especiales en ciertos casos.
+❌ ¿Qué problemas tuvimos durante el semestre?
+🧩 1. Desorganización en versiones iniciales
+
+Al inicio del proyecto:
+
+Había muchos paquetes diferentes (UNO2_0, UNO3_0, UNO4_0).
+Algunos nombres de métodos cambiaban.
+Había errores de escritura en funciones y clases.
+
+Esto causó confusión y retrabajo.
+
+🧪 2. Errores en pruebas
+
+En algunos casos:
+
+Las pruebas estaban mal escritas.
+Faltaban cierres o tenían errores pequeños.
+No siempre reflejaban correctamente el sistema real.
+🔁 3. Problemas con reglas del juego
+
+En versiones intermedias:
+
+La carta reversa no siempre funcionaba bien.
+Algunos efectos especiales no estaban bien conectados con el flujo del juego.
+🧾 4. Documentación inconsistente al inicio
+Algunos documentos estaban desordenados.
+UML no siempre coincidía con el código real.
+Se mejoró hasta la versión final.
+📊 Conclusión del semestre
+
+A lo largo del semestre, el proyecto UNO no solo fue un trabajo de programación, sino también un proceso de aprendizaje en equipo.
+
+Aprendimos a:
+
+Trabajar mejor en conjunto
+Organizarnos mejor
+Entender cómo evoluciona un sistema real
+Detectar errores y corregirlos
+Mejorar la comunicación
